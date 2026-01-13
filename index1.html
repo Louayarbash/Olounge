@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O lounge resto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #1a1d21; /* Charcoal background from your logo image */
+            --card-bg: #24282d;
+            --accent: #d4af37; /* Gold accent */
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+
+        /* LOGO STYLING */
+        .logo {
+            width: 120px; /* Adjust size as needed */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 { font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin: 0; font-size: 1.8rem; }
+        .subtitle { color: var(--text-main); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; margin-top: 5px; opacity: 0.8; }
+
+        .category {
+            margin-bottom: 35px;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 5px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+        }
+
+        .item-name { font-weight: 400; font-size: 1rem; color: var(--text-main); }
+        
+        .dots {
+            flex-grow: 1;
+            border-bottom: 1px dotted #444;
+            margin: 0 10px;
+        }
+
+        .price {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 40px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <header>
+        <img src="logo.png" alt="Bar Logo" class="logo">
+        <h1>Bar Menu</h1>
+        <div class="subtitle">Premium Spirits & Cocktails</div>
+    </header>
+
+    <div class="category">
+        <div class="category-title">Vodka</div>
+        <div class="item"><span class="item-name">Absolut</span><div class="dots"></div><span class="price">200</span></div>
+        <div class="item"><span class="item-name">Grey Goose</span><div class="dots"></div><span class="price">280</span></div>
+        <div class="item"><span class="item-name">Belvedere Magnum</span><div class="dots"></div><span class="price">520</span></div>
+    </div>
+
+    <div class="category">
+        <div class="category-title">Rhum</div>
+        <div class="item"><span class="item-name">Havana Club Anejo</span><div class="dots"></div><span class="price">200</span></div>
+        <div class="item"><span class="item-name">Havana Club Especial</span><div class="dots"></div><span class="price">210</span></div>
+        <div class="item"><span class="item-name">Brugal Anejo Superior</span><div class="dots"></div><span class="price">210</span></div>
+    </div>
+
+    <div class="category">
+        <div class="category-title">Tequila</div>
+        <div class="item"><span class="item-name">1800 Reposado</span><div class="dots"></div><span class="price">230</span></div>
+        <div class="item"><span class="item-name">Casamigos Reposado</span><div class="dots"></div><span class="price">360</span></div>
+        <div class="item"><span class="item-name">Don Julio Blanco</span><div class="dots"></div><span class="price">340</span></div>
+        <div class="item"><span class="item-name">Clase Azul Reposado</span><div class="dots"></div><span class="price">1100</span></div>
+    </div>
+
+    <div class="category">
+        <div class="category-title">Whiskey</div>
+        <div class="item"><span class="item-name">Jameson</span><div class="dots"></div><span class="price">220</span></div>
+        <div class="item"><span class="item-name">Chivas Regal 12</span><div class="dots"></div><span class="price">260</span></div>
+        <div class="item"><span class="item-name">Black Label</span><div class="dots"></div><span class="price">260</span></div>
+        <div class="item"><span class="item-name">Gold Label</span><div class="dots"></div><span class="price">350</span></div>
+    </div>
+
+    <div class="category">
+        <div class="category-title">Others</div>
+        <div class="item"><span class="item-name">Smirnoff Ice</span><div class="dots"></div><span class="price">11</span></div>
+        <div class="item"><span class="item-name">Cocktail</span><div class="dots"></div><span class="price">18</span></div>
+        <div class="item"><span class="item-name">Bière</span><div class="dots"></div><span class="price">9</span></div>
+    </div>
+
+    <footer>
+        <p>© 2026 Your Bar Name • All Prices in USD</p>
+    </footer>
+</div>
+
+</body>
+</html>
