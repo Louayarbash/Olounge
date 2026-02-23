@@ -25,32 +25,38 @@
             border-top: 5px solid #2c3e50;
         }
 
-        /* Logo Placeholder Styles */
+        .logo {
+            width: 180px; /* Adjust size as needed */
+            height: auto;
+            /*margin-bottom: 20px;*/
+        }
+
+        /* Logo Placeholder Styles (Dark Mode) */
         .logo-container {
             text-align: center;
             margin-bottom: 50px;
         }
-
-        .logo {
-            width: 140px; /* Adjust size as needed */
-            height: auto;
-            margin-bottom: 20px;
+        .logo-container::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #d4af37; /* Gold accent remains */
+            margin: 15px auto 0;
         }
 
-        .logo-placeholder1 {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 200px;
-            height: 200px;
-            background-color: #f0f0f0;
-            border: 2px dashed #cccccc;
-            color: #888888;
-            font-size: 14px;
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            text-align: center;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 3px;
+            color: #ffffff; /* White headers for pop */
+            margin-top: 40px;
+            margin-bottom: 20px;
+            position: relative;
         }
-
+        
         /* Section Headers */
         h2 {
             font-family: 'Playfair Display', serif;
@@ -58,7 +64,7 @@
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 3px;
-            color: #2c3e50;
+            color: #ffffff; /* White headers for pop */
             margin-top: 50px;
             margin-bottom: 30px;
             position: relative;
@@ -69,7 +75,7 @@
             display: block;
             width: 50px;
             height: 2px;
-            background-color: #d4af37; /* Subtle gold accent */
+            background-color: #d4af37; /* Gold accent remains */
             margin: 15px auto 0;
         }
 
@@ -302,6 +308,7 @@
 </body>
 
 </html>
+
 
 
 
