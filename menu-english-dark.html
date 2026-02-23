@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dark Restaurant Menu</title>
+    <style>
+        /* Importing the same elegant fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212; /* Very dark background */
+            color: #e0e0e0; /* Light off-white base text color */
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .menu-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1e1e1e; /* Dark gray container background */
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow for dark mode */
+            border-top: 5px solid #d4af37; /* Accent changed to gold for better contrast */
+        }
+
+        /* Logo Placeholder Styles (Dark Mode) */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo-placeholder {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 100px;
+            background-color: #2a2a2a;
+            border: 2px dashed #444444;
+            color: #888888;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Section Headers */
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ffffff; /* White headers for pop */
+            margin-top: 50px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #d4af37; /* Gold accent remains */
+            margin: 15px auto 0;
+        }
+
+        /* Menu Items */
+        .menu-item {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .item-title {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            color: #ffffff; /* Bright white titles */
+        }
+
+        .item-desc {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 15px;
+            color: #aaaaaa; /* Light gray descriptions for contrast */
+            margin: 0;
+        }
+
+        /* Special Sections (Steaks & Sides - Dark Mode) */
+        .special-section {
+            background-color: #252525; /* Slightly different dark shade for separation */
+            padding: 30px;
+            border: 1px solid #333333; /* Dark subtle border */
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .special-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #ffffff; /* White title */
+        }
+
+        .special-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            color: #e0e0e0;
+        }
+
+        .special-list li {
+            font-size: 15px;
+        }
+
+        .special-list li::after {
+            content: ' • ';
+            color: #d4af37; /* Gold separator */
+            margin-left: 15px;
+        }
+
+        .special-list li:last-child::after {
+            content: '';
+        }
+
+        .sauces-list {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #aaaaaa; /* Light gray text */
+        }
+         .sauces-list strong {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        
+        <div class="logo-container">
+            <div class="logo-placeholder">
+                [ Place Logo Here ]
+            </div>
+        </div>
+
+        <h2>Starters</h2>
+        
+        <div class="menu-item">
+            <div class="item-title">Asian salmon tartare</div>
+            <p class="item-desc">Knife-cut salmon, sesame infused asian vinaigrette, crispy shallots, lightly marinated cucumber</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Black truffle beef tartare with aged parmesan</div>
+            <p class="item-desc">Maple roasted pecans, fresh truffle, golden house fries or crisp salad, artisan crouton</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Sea bass crudo</div>
+            <p class="item-desc">Thinly sliced sea bass, mild chili oil, mullet roe, roasted pine nuts, homemade focaccia</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Braised and grilled octopus</div>
+            <p class="item-desc">La Vera paprika butter, basil oil, roasted sweet potato</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Angus beef carpaccio</div>
+            <p class="item-desc">Roasted pistachios, wild mushroom mayonnaise, fresh arugula, pistachio oil, aged parmesan flakes</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Mini creamy burrata</div>
+            <p class="item-desc">Grilled artichoke purée, garlic and basil confit tomatoes, mediterranean olives, homemade focaccia, roasted walnuts</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Beetroot salad and salmon gravlax</div>
+            <p class="item-desc">Beetroot, silky labneh, red berry gravlax, pumpkin seeds, dill and orange vinaigrette</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Crisp green salad</div>
+            <p class="item-desc">Market vegetables, raspberry vinaigrette</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Signature Ceasar salad</div>
+            <p class="item-desc">House vinaigrette, focaccia croutons, anchovies, parmesan shavings</p>
+        </div>
+
+        <h2>Main Courses</h2>
+        
+        <div class="menu-item">
+            <div class="item-title">Braised beef chuck</div>
+            <p class="item-desc">Beef braised for 16h in red wine, mashed potatoes, crispy celeriac, reduced juice beef, fresh parsley gremolata</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Pan-seared veal flank</div>
+            <p class="item-desc">Porto caramelized shallots, house fries, house mayonnaise</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Aged Angus beef sirloin</div>
+            <p class="item-desc">10 oz, Grilled, Madagascar green peppercorn sauce flambéed with spiced rum</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Wild Argentine shrimp risotto</div>
+            <p class="item-desc">Green asparagus, mascarpone espuma with parmesan</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Sous-vide supreme chicken</div>
+            <p class="item-desc">Garlic and sage butter, lemon confit, orange sweet potato purée, creamy mustard and barberry sauce</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Pan-seared salmon</div>
+            <p class="item-desc">Citrus and saffron sauce, fresh dill, pearl couscous, chorizo, market vegetables</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Lobster ravioli</div>
+            <p class="item-desc">Creamy ginger and lemongrass bisque</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Market vegetables</div>
+            <p class="item-desc">Fresh daily selection</p>
+        </div>
+
+        <div class="special-section">
+            <div class="special-title">CAB Certified Angus Beef Cuts</div>
+            <ul class="special-list">
+                <li>Sirloin</li>
+                <li>Cowboy steak</li>
+                <li>Ribeye</li>
+                <li>Shell steak</li>
+                <li>Manhattan medallion</li>
+                <li>Filet mignon</li>
+            </ul>
+            <div class="sauces-list">
+                <strong>Sauce choices:</strong> Green peppercorn • Red wine • Chimichurri • Caramelized shallots & Porto
+            </div>
+        </div>
+
+        <div class="special-section">
+            <div class="special-title">Sides</div>
+            <ul class="special-list">
+                <li>Grilled veggies</li>
+                <li>Gold mashed potatoes</li>
+                <li>House fries</li>
+                <li>Jumbo grilled tiger shrimp</li>
+            </ul>
+        </div>
+
+        <h2>Desserts</h2>
+        
+        <div class="menu-item">
+            <div class="item-title">House churros</div>
+            <p class="item-desc">Maple salted caramel</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Chocolate lava cake</div>
+            <p class="item-desc">Vanilla ice cream, raspberry-basil coulis</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Caramelized apple pie</div>
+            <p class="item-desc">Salted caramel, chocolate ice cream</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Pistachio & maple tiramisu</div>
+            <p class="item-desc">House specialty</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Chef’s choice of crème brûlée</div>
+            <p class="item-desc">Seasonal inspiration</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
