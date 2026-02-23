@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dark Restaurant Menu - Two Column</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212; 
+            color: #e0e0e0; 
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .menu-container {
+            max-width: 1000px; /* Widened to accommodate two columns comfortably */
+            margin: 0 auto;
+            background: #1e1e1e; 
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+            border-top: 5px solid #d4af37; 
+        }
+
+        /* Logo Placeholder Styles */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo-container::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #d4af37; 
+            margin: 15px auto 0;
+        }
+
+        .logo-placeholder {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 100px;
+            background-color: #2a2a2a;
+            border: 2px dashed #444444;
+            color: #888888;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Menu Subtitles */
+        .subtitle {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #d4af37;
+            margin-top: -10px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle-desc {
+            text-align: center;
+            color: #aaaaaa; 
+            font-style: italic; 
+            margin-top: 0px; 
+            margin-bottom: 50px;
+            font-size: 14px;
+        }
+
+        /* Two Column Grid Layout */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px; /* Space between the two columns */
+        }
+
+        /* Mobile responsiveness: collapses to 1 column on small screens */
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Section Headers */
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px; /* Slightly smaller to fit columns beautifully */
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ffffff; 
+            margin-top: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #d4af37; 
+            margin: 15px auto 0;
+        }
+
+        /* Menu Items */
+        .menu-item {
+            margin-bottom: 25px;
+            text-align: center;
+            break-inside: avoid; /* Helps prevent awkward page breaks when printing */
+        }
+
+        .item-title {
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            color: #ffffff; 
+        }
+
+        .price {
+            color: #d4af37;
+            margin-left: 8px;
+            font-weight: 700;
+        }
+
+        .item-desc {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 14px;
+            color: #aaaaaa; 
+            margin: 0;
+        }
+
+        /* Special Sections (Steaks & Sides) */
+        .special-section {
+            background-color: #252525; 
+            padding: 25px;
+            border: 1px solid #333333; 
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            break-inside: avoid;
+        }
+
+        .special-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #ffffff; 
+        }
+
+        .special-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            color: #e0e0e0;
+        }
+
+        .special-list li {
+            font-size: 14px;
+        }
+
+        .special-list li::after {
+            content: ' • ';
+            color: #d4af37; 
+            margin-left: 12px;
+        }
+
+        .special-list li:last-child::after {
+            content: '';
+        }
+
+        .sauces-list {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #aaaaaa; 
+        }
+        
+        .sauces-list strong {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        
+        <div class="logo-container">
+            <div class="logo-placeholder">
+                [ Place Logo Here ]
+            </div>
+        </div>
+
+        <div class="subtitle">Signature Dining Experience</div>
+        <p class="subtitle-desc">
+            Discover our carefully curated selection of modern dishes, crafted with the finest ingredients for an exceptional culinary journey.
+        </p>
+
+        <div class="menu-grid">
+            
+            <div class="column">
+                
+                <h2>Starters</h2>
+                
+                <div class="menu-item">
+                    <div class="item-title">Asian salmon tartare <span class="price">$22</span></div>
+                    <p class="item-desc">Knife-cut salmon, sesame infused asian vinaigrette, crispy shallots, lightly marinated cucumber</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Black truffle beef tartare <span class="price">$26</span></div>
+                    <p class="item-desc">Maple roasted pecans, fresh truffle, golden house fries or crisp salad, artisan crouton</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Sea bass crudo <span class="price">$24</span></div>
+                    <p class="item-desc">Thinly sliced sea bass, mild chili oil, mullet roe, roasted pine nuts, homemade focaccia</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Braised and grilled octopus <span class="price">$28</span></div>
+                    <p class="item-desc">La Vera paprika butter, basil oil, roasted sweet potato</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Angus beef carpaccio <span class="price">$25</span></div>
+                    <p class="item-desc">Roasted pistachios, wild mushroom mayonnaise, fresh arugula, pistachio oil, aged parmesan flakes</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Mini creamy burrata <span class="price">$21</span></div>
+                    <p class="item-desc">Grilled artichoke purée, garlic and basil confit tomatoes, mediterranean olives, homemade focaccia, roasted walnuts</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Beetroot salad & salmon gravlax <span class="price">$19</span></div>
+                    <p class="item-desc">Beetroot, silky labneh, red berry gravlax, pumpkin seeds, dill and orange vinaigrette</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Crisp green salad <span class="price">$14</span></div>
+                    <p class="item-desc">Market vegetables, raspberry vinaigrette</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Signature Ceasar salad <span class="price">$18</span></div>
+                    <p class="item-desc">House vinaigrette, focaccia croutons, anchovies, parmesan shavings</p>
+                </div>
+
+                <h2>Desserts</h2>
+                
+                <div class="menu-item">
+                    <div class="item-title">House churros <span class="price">$14</span></div>
+                    <p class="item-desc">Maple salted caramel</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Chocolate lava cake <span class="price">$16</span></div>
+                    <p class="item-desc">Vanilla ice cream, raspberry-basil coulis</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Caramelized apple pie <span class="price">$15</span></div>
+                    <p class="item-desc">Salted caramel, chocolate ice cream</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Pistachio & maple tiramisu <span class="price">$16</span></div>
+                    <p class="item-desc">House specialty</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Chef’s choice of crème brûlée <span class="price">$14</span></div>
+                    <p class="item-desc">Seasonal inspiration</p>
+                </div>
+
+            </div> <div class="column">
+                
+                <h2>Main Courses</h2>
+                
+                <div class="menu-item">
+                    <div class="item-title">Braised beef chuck <span class="price">$42</span></div>
+                    <p class="item-desc">Beef braised for 16h in red wine, mashed potatoes, crispy celeriac, reduced juice beef, fresh parsley gremolata</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Pan-seared veal flank <span class="price">$46</span></div>
+                    <p class="item-desc">Porto caramelized shallots, house fries, house mayonnaise</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Aged Angus beef sirloin <span class="price">$55</span></div>
+                    <p class="item-desc">10 oz, Grilled, Madagascar green peppercorn sauce flambéed with spiced rum</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Wild Argentine shrimp risotto <span class="price">$38</span></div>
+                    <p class="item-desc">Green asparagus, mascarpone espuma with parmesan</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Sous-vide supreme chicken <span class="price">$34</span></div>
+                    <p class="item-desc">Garlic and sage butter, lemon confit, orange sweet potato purée, creamy mustard and barberry sauce</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Pan-seared salmon <span class="price">$39</span></div>
+                    <p class="item-desc">Citrus and saffron sauce, fresh dill, pearl couscous, chorizo, market vegetables</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Lobster ravioli <span class="price">$44</span></div>
+                    <p class="item-desc">Creamy ginger and lemongrass bisque</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-title">Market vegetables <span class="price">$24</span></div>
+                    <p class="item-desc">Fresh daily selection</p>
+                </div>
+
+                <div class="special-section">
+                    <div class="special-title">CAB Certified Angus Beef Cuts</div>
+                    <p class="item-desc" style="margin-bottom: 15px;">Served a la carte. Market price.</p>
+                    <ul class="special-list">
+                        <li>Sirloin</li>
+                        <li>Cowboy steak</li>
+                        <li>Ribeye</li>
+                        <li>Shell steak</li>
+                        <li>Manhattan medallion</li>
+                        <li>Filet mignon</li>
+                    </ul>
+                    <div class="sauces-list">
+                        <strong>Sauce choices ($4):</strong> Green peppercorn • Red wine • Chimichurri • Caramelized shallots & Porto
+                    </div>
+                </div>
+
+                <div class="special-section">
+                    <div class="special-title">Sides</div>
+                    <ul class="special-list">
+                        <li>Grilled veggies <span class="price">$10</span></li>
+                        <li>Gold mashed potatoes <span class="price">$12</span></li>
+                        <li>House fries <span class="price">$9</span></li>
+                        <li>Jumbo grilled tiger shrimp <span class="price">$18</span></li>
+                    </ul>
+                </div>
+
+            </div> </div> </div>
+
+</body>
+</html>
