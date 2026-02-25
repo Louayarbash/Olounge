@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Lounge Food Menu - English</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9f9f9;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .menu-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 0px; /*60 px*/
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            /*border-top: 5px solid #2c3e50;*/
+        }
+
+        .logo {
+            width: 180px; /* Adjust size as needed */
+            height: auto;
+            /*margin-bottom: 20px;*/
+        }
+
+        /* Logo Placeholder Styles (Dark Mode) */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo-container::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #d4af37; /* Gold accent remains */
+            margin: 15px auto 0;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #2c3e50; /* White headers for pop */
+            margin-top: 40px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        /* Section Headers */
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #2c3e50; /* White headers for pop */
+            margin-top: 50px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #d4af37; /* Gold accent remains */
+            margin: 15px auto 0;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #d4af37;
+            margin-top: -10px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle-desc {
+            text-align: center;
+            color: #aaaaaa; 
+            font-style: italic; 
+            margin-top: 0px; 
+            /*margin-bottom: 40px;*/
+            font-size: 14px;
+        }
+
+        /* Menu Items */
+        .menu-item {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .item-title {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            color: #d4af37;
+            margin-left: 8px;
+            font-weight: 700;
+        }
+
+        .item-desc {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 15px;
+            color: #666666;
+            margin: 0;
+        }
+
+        /* Special Sections (Steaks & Sides) */
+        .special-section {
+            background-color: #fcfbf9;
+            padding: 30px;
+            border: 1px solid #eeeeee;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .special-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .special-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .special-list li {
+            font-size: 15px;
+        }
+
+        .special-list li::after {
+            content: ' • ';
+            color: #d4af37;
+            margin-left: 15px;
+        }
+
+        .special-list li:last-child::after {
+            content: '';
+        }
+
+        .sauces-list {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">        
+        <div class="logo-container">
+                <img src="logo-tran.png" alt="O Lounge & Resto Logo" class="logo">
+        <h1>O Lounge & Resto</h1>
+        <div class="item-title">Signature Dining Experience</div>
+        <p class="subtitle-desc">
+            Discover our carefully curated selection of modern dishes, crafted with the finest ingredients for an exceptional culinary journey.
+        </p>
+    
+        </div>
+
+        <h2>Starters</h2>
+        
+        <div class="menu-item">
+            <div class="item-title">Asian salmon tartare <span class="price">$28</span></div>
+            <p class="subtitle-desc">Knife-cut salmon, sesame infused asian vinaigrette, crispy shallots, lightly marinated cucumber</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Black truffle beef tartare with aged parmesan <span class="price">$31</span></div>
+            <p class="subtitle-desc">Maple roasted pecans, fresh truffle, golden house fries or crisp salad, artisan crouton</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Sea bass crudo <span class="price">$25</span></div>
+            <p class="subtitle-desc">Thinly sliced sea bass, mild chili oil, mullet roe, roasted pine nuts, homemade focaccia</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Braised and grilled octopus <span class="price">$26</span></div>
+            <p class="subtitle-desc">La Vera paprika butter, basil oil, roasted sweet potato</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Angus beef carpaccio <span class="price">$24</span></div>
+            <p class="subtitle-desc">Roasted pistachios, wild mushroom mayonnaise, fresh arugula, pistachio oil, aged parmesan flakes</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Mini creamy burrata <span class="price">$26</span></div>
+            <p class="subtitle-desc">Grilled artichoke purée, garlic and basil confit tomatoes, mediterranean olives, homemade focaccia, roasted walnuts</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Beetroot salad and salmon gravlax <span class="price">$23</span></div>
+            <p class="subtitle-desc">Beetroot, silky labneh, red berry gravlax, pumpkin seeds, dill and orange vinaigrette</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Crisp green salad <span class="price">$17</span></div>
+            <p class="subtitle-desc">Market vegetables, raspberry vinaigrette</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Signature Ceasar salad <span class="price">$18</span></div>
+            <p class="subtitle-desc">House vinaigrette, focaccia croutons, anchovies, parmesan shavings</p>
+        </div>
+
+        <h2>Main Courses</h2>
+        
+        <div class="menu-item">
+            <div class="item-title">Braised beef chuck <span class="price">$47</span></div>
+            <p class="subtitle-desc">Beef braised for 16h in red wine, mashed potatoes, crispy celeriac, reduced juice beef, fresh parsley gremolata</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Pan-seared veal flank <span class="price">$34</span></div>
+            <p class="subtitle-desc">Porto caramelized shallots, house fries, house mayonnaise</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Aged Angus beef sirloin <span class="price">$58</span></div>
+            <p class="subtitle-desc">10 oz, Grilled, Madagascar green peppercorn sauce flambéed with spiced rum, mashed potatoes</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Wild Argentine shrimp risotto <span class="price">$32</span></div>
+            <p class="subtitle-desc">Green asparagus, mascarpone espuma with parmesan</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Sous-vide supreme chicken <span class="price">$34</span></div>
+            <p class="subtitle-desc">Garlic and sage butter, lemon confit, orange sweet potato purée, creamy mustard and barberry sauce</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Pan-seared salmon <span class="price">$35</span></div>
+            <p class="subtitle-desc">Citrus and saffron sauce, fresh dill, pearl couscous, chorizo, market vegetables</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Lobster ravioli <span class="price">$34</span></div>
+            <p class="subtitle-desc">Creamy ginger and lemongrass bisque</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">6 oz grilled beef tenderloin<span class="price">$22</span></div>
+            <p class="subtitle-desc">Served with red wine sauce and mashed potatoes</p>
+        </div>
+
+        <!--div class="special-section">
+            <div class="special-title">CAB Certified Angus Beef Cuts</div>
+            <ul class="special-list">
+                <li>Sirloin</li>
+                <li>Cowboy steak</li>
+                <li>Ribeye</li>
+                <li>Shell steak</li>
+                <li>Manhattan medallion</li>
+                <li>Filet mignon</li>
+            </ul>
+            <div class="sauces-list">
+                <strong>Sauce choices:</strong> Green peppercorn • Red wine • Chimichurri • Caramelized shallots & Porto
+            </div>
+    </div-->
+
+        <div class="special-section">
+            <div class="special-title">Sides</div>
+            <ul class="special-list">
+                <li>Grilled market vegetables<span class="price">$17</span></li>
+                <li>Gold mashed potatoes <span class="price">$10</span></li>
+                <li>House fries <span class="price">$9</span></li>
+                <li>Jumbo grilled tiger shrimp <span class="price">$14</span></li>
+            </ul>
+        </div>
+
+        <h2>Desserts</h2>
+        
+        <!--div class="menu-item">
+            <div class="item-title">House churros <span class="price">$11</span></div>
+            <p class="subtitle-desc">Maple salted caramel</p>
+    </div-->
+        
+        <div class="menu-item">
+            <div class="item-title">Chocolate lava cake <span class="price">$14</span></div>
+            <p class="subtitle-desc">Vanilla ice cream, raspberry-basil coulis</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Caramelized apple pie <span class="price">$12</span></div>
+            <p class="subtitle-desc">Salted caramel, chocolate ice cream</p>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Pistachio & maple tiramisu <span class="price">$14</span></div>
+            <!--p class="subtitle-desc">House specialty</p-->
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-title">Chef’s choice of crème brûlée <span class="price">$13</span></div>
+            <!--p class="subtitle-desc">Seasonal inspiration</p-->
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
